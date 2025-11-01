@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Home Decorator - Redesign Your Room in Seconds</title>
+    <meta
+      name="description"
+      content="Upload a photo of your room, choose a style like Japandi or Cyberpunk, and let AI redesign it in seconds. Visualize your dream space."
+    />
+
+    <link rel="icon" href="public/icons/icon-192x192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="public/icons/icon-192x192.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./icons/icon-512x512_bg.png" alt="AI Home Decorator Logo" />
+          <span>AI Home Decorator</span>
+        </a>
+        <nav class="main-nav">
+          <a href="#how-it-works">How It Works</a>
+          <a href="#features">Styles</a>
+          <a href="#pricing">Pricing</a>
+          <a
+            href="https://aihomedecorator.com/signup"
+            target="_blank"
+            class="btn btn-secondary"
+            >Login</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="container">
+          <h1>
+            Redesign Your Room in <span class="gradient-text">Seconds</span>
+          </h1>
+          <p class="subtitle">
+            Upload a photo of your room, choose a style, and let AI visualize
+            your dream space. From Japandi to Cyberpunk, see it come to life.
+          </p>
+          <a href="https://aihomedecorator.com/signup" class="btn btn-primary"
+            >Try for Free</a
+          >
+
+          <div class="slider-wrapper animate-on-scroll">
+            <img
+              src="./image/livingroom/before.png"
+              alt="Before"
+              class="slider-image slider-image-before"
+            />
+
+            <div class="slider-image-after">
+              <img
+                src="./image/livingroom/after.png"
+                alt="After"
+                class="slider-image"
+              />
+            </div>
+
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              class="slider-input"
+              aria-label="Image comparison slider"
+            />
+
+            <div class="slider-handle"></div>
+
+            <span class="slider-label slider-label-before">Before</span>
+            <span class="slider-label slider-label-after">After</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="animate-on-scroll">
+        <div class="container">
+          <h2>How It Works</h2>
+          <div class="how-it-works-grid">
+            <div class="step-card">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5"
+                  />
+                </svg>
+              </div>
+              <h3>1. Upload Your Room</h3>
+              <p>
+                Snap a photo of any room—messy or empty, it doesn't matter.
+                Upload it with one click.
+              </p>
+            </div>
+            <div class="step-card">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.998 15.998 0 011.62-3.388m5.043.025a15.998 15.998 0 001.62-3.388m-1.62 3.388a3 3 0 005.78-1.128 2.25 2.25 0 012.4-2.245 4.5 4.5 0 00-8.4 2.245c0 .399.078.78.22 1.128zm0 0A15.998 15.998 0 0116.07 8.072m-4.504 0A15.998 15.998 0 018.072 16.07m4.504 0A15.998 15.998 0 0116.07 16.07m-4.504 0A15.998 15.998 0 0111.566 8.072"
+                  />
+                </svg>
+              </div>
+              <h3>2. Select Your Style</h3>
+              <p>
+                Choose from a curated list of design styles, from modern
+                Minimalism to futuristic Cyberpunk.
+              </p>
+            </div>
+            <div class="step-card">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM18 13.5l.375 1.5L18 16.5l-.375-1.5-.375 1.5L16.5 15l1.125-.375L18 13.5z"
+                  />
+                </svg>
+              </div>
+              <h3>3. Generate Design</h3>
+              <p>
+                Our AI analyzes your room and generates a photorealistic,
+                stunning redesign in seconds.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="animate-on-scroll">
+        <div class="container">
+          <h2>A Universe of <span class="gradient-text">Styles</span></h2>
+          <div class="style-grid">
+            <div class="style-card">
+              <img src="./image/all-styles/Japandi.png" alt="Japandi Style" />
+              <div class="style-name">Japandi</div>
+            </div>
+            <div class="style-card">
+              <img src="./image/all-styles/boho.png" alt="Boho Style" />
+              <div class="style-name">Boho</div>
+            </div>
+            <div class="style-card">
+              <img
+                src="./image/all-styles/Scandinavian.png"
+                alt="Scandinavian Style"
+              />
+              <div class="style-name">Scandinavian</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="animate-on-scroll">
+        <div class="container">
+          <div class="pricing-box">
+            <h2>Get Started for <span class="gradient-text">Free</span></h2>
+            <p>
+              Your first few designs are on us. Sign up to get your free
+              generation credits and start decorating today. No credit card
+              required.
+            </p>
+            <a href="https://aihomedecorator.com/" class="btn btn-primary"
+              >Sign Up Now</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="cta">
+        <div class="container">
+          <h2 class="animate-on-scroll">See Your Dream Space Come to Life.</h2>
+          <a
+            href="https://aihomedecorator.com/"
+            class="btn btn-primary animate-on-scroll"
+            style="margin-top: 32px; transition-delay: 0.2s"
+            >Start Decorating Now</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-links">
+          <a href="/legal#terms">Terms</a>
+          <a href="/legal#policy">Privacy</a>
+          <a href="/legal#disclaimer">Disclaimer</a>
+        </div>
+        <p>&copy; 2025 AI Home Decorator.</p>
+      </div>
+    </footer>
+
+    <script>
+      /* --- JavaScript for Interactions --- */
+
+      document.addEventListener("DOMContentLoaded", () => {
+        /* --- 1. Before/After Slider --- */
+        const slider = document.querySelector(".slider-input");
+        if (slider) {
+          const sliderWrapper = slider.closest(".slider-wrapper");
+          const imageAfter = sliderWrapper.querySelector(".slider-image-after");
+          const handle = sliderWrapper.querySelector(".slider-handle");
+
+          slider.addEventListener("input", (e) => {
+            const value = e.target.value;
+            if (imageAfter) {
+              imageAfter.style.clipPath = `polygon(${value}% 0, 100% 0, 100% 100%, ${value}% 100%)`;
+            }
+            if (handle) {
+              handle.style.left = `${value}%`;
+            }
+          });
+        }
+
+        /* --- 2. Fade-in on Scroll Animation --- */
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // Optional: only animate once
+              }
+            });
+          },
+          {
+            threshold: 0.1, // Trigger when 10% of the element is visible
+          }
+        );
+
+        const sectionsToAnimate =
+          document.querySelectorAll(".animate-on-scroll");
+        sectionsToAnimate.forEach((section) => {
+          observer.observe(section);
+        });
+      });
+    </script>
+  </body>
+</html>
