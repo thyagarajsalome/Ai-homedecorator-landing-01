@@ -27,8 +27,20 @@
           <img src="./icons/icon-512x512_bg.png" alt="AI Home Decorator Logo" />
           <span>AI Home Decorator</span>
         </a>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
         <nav class="main-nav">
           <a href="#how-it-works">How It Works</a>
+          <a href="#demos">Demos</a>
           <a href="#features">Styles</a>
           <a href="#pricing">Pricing</a>
           <a
@@ -161,6 +173,34 @@
         </div>
       </section>
 
+      <section id="demos" class="animate-on-scroll">
+        <div class="container">
+          <h2>See it in <span class="gradient-text">Action</span></h2>
+          <div class="demo-grid">
+            <div class="demo-video-wrapper">
+              <video controls loop muted playsinline>
+                <source
+                  src="./video/Ai- Homedecorator 1.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <p>Demo 1: Redesigning a living room and kitchen.</p>
+            </div>
+            <div class="demo-video-wrapper">
+              <video controls loop muted playsinline>
+                <source
+                  src="./video/Ai- Homedecorator 2.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <p>Demo 2: Trying multiple styles on different rooms.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="features" class="animate-on-scroll">
         <div class="container">
           <h2>A Universe of <span class="gradient-text">Styles</span></h2>
@@ -266,6 +306,23 @@
         sectionsToAnimate.forEach((section) => {
           observer.observe(section);
         });
+
+        /* === 3. Mobile Menu Toggle === */
+        const menuToggle = document.querySelector(".menu-toggle");
+        const mainNav = document.querySelector(".main-nav");
+
+        if (menuToggle && mainNav) {
+          menuToggle.addEventListener("click", () => {
+            // Toggle 'active' class on both button and nav
+            menuToggle.classList.toggle("active");
+            mainNav.classList.toggle("active");
+
+            // Update ARIA attribute
+            const isExpanded =
+              menuToggle.getAttribute("aria-expanded") === "true";
+            menuToggle.setAttribute("aria-expanded", !isExpanded);
+          });
+        }
       });
     </script>
   </body>
