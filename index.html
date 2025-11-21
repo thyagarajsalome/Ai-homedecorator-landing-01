@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="bg-glow"></div>
+
     <header class="main-header">
       <div class="container">
         <a href="#" class="logo">
@@ -40,7 +42,7 @@
 
         <nav class="main-nav">
           <a href="#how-it-works">How It Works</a>
-          <a href="#demos">Demos</a>
+          <a href="#app-showcase">Showcase</a>
           <a href="#features">Styles</a>
           <a href="#pricing">Pricing</a>
           <a
@@ -56,18 +58,27 @@
     <main>
       <section id="hero">
         <div class="container">
-          <h1>
+          <h1 class="animate-on-scroll">
             Redesign Your Room in <span class="gradient-text">Seconds</span>
           </h1>
-          <p class="subtitle">
+          <p class="subtitle animate-on-scroll" style="transition-delay: 0.1s">
             Upload a photo of your room, choose a style, and let AI visualize
             your dream space. From Japandi to Cyberpunk, see it come to life.
           </p>
-          <a href="https://aihomedecorator.com/signup" class="btn btn-primary"
-            >Try for Free</a
+          <div
+            class="hero-buttons animate-on-scroll"
+            style="transition-delay: 0.2s"
           >
+            <a href="https://aihomedecorator.com/signup" class="btn btn-primary"
+              >Try for Free</a
+            >
+            <a href="#demos" class="btn btn-text">Watch Demo &rarr;</a>
+          </div>
 
-          <div class="slider-wrapper animate-on-scroll">
+          <div
+            class="slider-wrapper animate-on-scroll"
+            style="transition-delay: 0.3s"
+          >
             <img
               src="./image/livingroom/before.png"
               alt="Before"
@@ -93,15 +104,15 @@
 
             <div class="slider-handle"></div>
 
-            <span class="slider-label slider-label-before">Before</span>
-            <span class="slider-label slider-label-after">After</span>
+            <span class="slider-label slider-label-before">Original</span>
+            <span class="slider-label slider-label-after">AI Redesign</span>
           </div>
         </div>
       </section>
 
       <section id="how-it-works" class="animate-on-scroll">
         <div class="container">
-          <h2>How It Works</h2>
+          <h2>How It <span class="gradient-text">Works</span></h2>
           <div class="how-it-works-grid">
             <div class="step-card">
               <div class="icon">
@@ -173,29 +184,89 @@
         </div>
       </section>
 
+      <section id="app-showcase" class="animate-on-scroll">
+        <div class="container">
+          <h2>Experience the <span class="gradient-text">Future</span></h2>
+          <p class="section-desc">
+            Take your interior design skills anywhere. The most powerful AI
+            decorator, right in your pocket.
+          </p>
+
+          <div class="showcase-grid">
+            <div class="showcase-item">
+              <img
+                src="./image/mobile-view/6.png"
+                alt="Mobile View Showcase"
+                loading="lazy"
+              />
+            </div>
+            <div class="showcase-item">
+              <img
+                src="./image/mobile-view/3.png"
+                alt="App Dark Mode"
+                loading="lazy"
+              />
+            </div>
+            <div class="showcase-item">
+              <img
+                src="./image/mobile-view/4.png"
+                alt="Room Transformation"
+                loading="lazy"
+              />
+            </div>
+            <div class="showcase-item">
+              <img
+                src="./image/mobile-view/5.png"
+                alt="Style Selection"
+                loading="lazy"
+              />
+            </div>
+            <div class="showcase-item">
+              <img
+                src="./image/mobile-view/1.png"
+                alt="Splash Screen"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="demos" class="animate-on-scroll">
         <div class="container">
           <h2>See it in <span class="gradient-text">Action</span></h2>
           <div class="demo-grid">
             <div class="demo-video-wrapper">
-              <video controls loop muted playsinline>
+              <video
+                controls
+                loop
+                muted
+                playsinline
+                poster="./image/tumb_01.png"
+              >
                 <source
                   src="./video/Ai- Homedecorator 1.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
               </video>
-              <p>Demo 1: Redesigning a living room and kitchen.</p>
+              <p>Redesigning a living room and kitchen</p>
             </div>
             <div class="demo-video-wrapper">
-              <video controls loop muted playsinline>
+              <video
+                controls
+                loop
+                muted
+                playsinline
+                poster="./image/tumb-2.png"
+              >
                 <source
                   src="./video/Ai- Homedecorator 2.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
               </video>
-              <p>Demo 2: Trying multiple styles on different rooms.</p>
+              <p>Trying multiple styles instantly</p>
             </div>
           </div>
         </div>
@@ -227,13 +298,16 @@
       <section id="pricing" class="animate-on-scroll">
         <div class="container">
           <div class="pricing-box">
+            <div class="pricing-badge">Limited Time</div>
             <h2>Get Started for <span class="gradient-text">Free</span></h2>
             <p>
               Your first few designs are on us. Sign up to get your free
               generation credits and start decorating today. No credit card
               required.
             </p>
-            <a href="https://aihomedecorator.com/" class="btn btn-primary"
+            <a
+              href="https://aihomedecorator.com/"
+              class="btn btn-primary btn-large"
               >Sign Up Now</a
             >
           </div>
@@ -245,7 +319,7 @@
           <h2 class="animate-on-scroll">See Your Dream Space Come to Life.</h2>
           <a
             href="https://aihomedecorator.com/"
-            class="btn btn-primary animate-on-scroll"
+            class="btn btn-white animate-on-scroll"
             style="margin-top: 32px; transition-delay: 0.2s"
             >Start Decorating Now</a
           >
@@ -255,20 +329,24 @@
 
     <footer class="main-footer">
       <div class="container">
+        <div class="footer-logo">
+          <img src="./icons/icon-512x512_bg.png" alt="Logo" width="32" />
+          <span>AI Home Decorator</span>
+        </div>
         <div class="footer-links">
           <a href="https://aihomedecorator.com/legal#disclaimer">Terms</a>
           <a href="https://aihomedecorator.com/legal">Privacy</a>
           <a href="https://aihomedecorator.com/legal#disclaimer">Disclaimer</a>
         </div>
-        <p>&copy; 2025 AI Home Decorator.</p>
+        <p class="copyright">
+          &copy; 2025 AI Home Decorator. All rights reserved.
+        </p>
       </div>
     </footer>
 
     <script>
-      /* --- JavaScript for Interactions --- */
-
       document.addEventListener("DOMContentLoaded", () => {
-        /* --- 1. Before/After Slider --- */
+        /* --- Slider Logic --- */
         const slider = document.querySelector(".slider-input");
         if (slider) {
           const sliderWrapper = slider.closest(".slider-wrapper");
@@ -277,47 +355,35 @@
 
           slider.addEventListener("input", (e) => {
             const value = e.target.value;
-            if (imageAfter) {
+            if (imageAfter)
               imageAfter.style.clipPath = `polygon(${value}% 0, 100% 0, 100% 100%, ${value}% 100%)`;
-            }
-            if (handle) {
-              handle.style.left = `${value}%`;
-            }
+            if (handle) handle.style.left = `${value}%`;
           });
         }
 
-        /* --- 2. Fade-in on Scroll Animation --- */
+        /* --- Animation Observer --- */
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
               if (entry.isIntersecting) {
                 entry.target.classList.add("visible");
-                observer.unobserve(entry.target); // Optional: only animate once
+                observer.unobserve(entry.target);
               }
             });
           },
-          {
-            threshold: 0.1, // Trigger when 10% of the element is visible
-          }
+          { threshold: 0.1 }
         );
+        document
+          .querySelectorAll(".animate-on-scroll")
+          .forEach((sec) => observer.observe(sec));
 
-        const sectionsToAnimate =
-          document.querySelectorAll(".animate-on-scroll");
-        sectionsToAnimate.forEach((section) => {
-          observer.observe(section);
-        });
-
-        /* === 3. Mobile Menu Toggle === */
+        /* --- Mobile Menu --- */
         const menuToggle = document.querySelector(".menu-toggle");
         const mainNav = document.querySelector(".main-nav");
-
         if (menuToggle && mainNav) {
           menuToggle.addEventListener("click", () => {
-            // Toggle 'active' class on both button and nav
             menuToggle.classList.toggle("active");
             mainNav.classList.toggle("active");
-
-            // Update ARIA attribute
             const isExpanded =
               menuToggle.getAttribute("aria-expanded") === "true";
             menuToggle.setAttribute("aria-expanded", !isExpanded);
