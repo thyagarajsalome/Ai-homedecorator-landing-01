@@ -110,6 +110,11 @@ h2 {
   color: transparent;
 }
 
+.gradient-text a,
+span {
+  color: #ec4899;
+}
+
 /* --- Buttons --- */
 .btn {
   display: inline-flex;
