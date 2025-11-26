@@ -6,7 +6,7 @@
     <title>AI Home Decorator - Redesign Your Room in Seconds</title>
     <meta
       name="description"
-      content="Upload a photo of your room, choose a style like Japandi or Cyberpunk, and let AI redesign it in seconds. Visualize your dream space."
+      content="Upload a photo of your room, choose a style like Japandi or Cyberpunk, and let AI redesign it in seconds."
     />
 
     <link rel="icon" href="public/icons/icon-192x192.png" type="image/png" />
@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -25,7 +25,6 @@
   </head>
   <body>
     <div class="bg-glow"></div>
-
     <div id="particles-container"></div>
 
     <header class="main-header">
@@ -49,6 +48,7 @@
           <a href="#how-it-works">How It Works</a>
           <a href="#app-showcase">App View</a>
           <a href="#features">Styles</a>
+          <a href="#demos">Demos</a>
           <a href="#pricing">Pricing</a>
           <a
             href="https://aihomedecorator.com/signup"
@@ -94,7 +94,6 @@
               alt="Before"
               class="slider-image slider-image-before"
             />
-
             <div class="slider-image-after">
               <img
                 src="./image/livingroom/after.png"
@@ -102,7 +101,6 @@
                 class="slider-image"
               />
             </div>
-
             <input
               type="range"
               min="0"
@@ -111,11 +109,23 @@
               class="slider-input"
               aria-label="Image comparison slider"
             />
-
-            <div class="slider-handle"></div>
-
-            <span class="slider-label slider-label-before">Original</span>
-            <span class="slider-label slider-label-after">AI Redesign</span>
+            <div class="slider-handle">
+              <div class="handle-line"></div>
+              <div class="handle-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M15.97 2.47a.75.75 0 011.06 0l4.5 4.5a.75.75 0 010 1.06l-4.5 4.5a.75.75 0 11-1.06-1.06l3.22-3.22H7.5a.75.75 0 010-1.5h11.69l-3.22-3.22a.75.75 0 010-1.06zm-7.94 9a.75.75 0 010 1.06l-3.22 3.22H16.5a.75.75 0 010 1.5H4.81l3.22 3.22a.75.75 0 11-1.06 1.06l-4.5-4.5a.75.75 0 010-1.06l4.5-4.5a.75.75 0 011.06 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -142,8 +152,8 @@
               </div>
               <h3>1. Upload</h3>
               <p>
-                Snap a photo of any room—messy or empty, it doesn't matter.
-                Upload it with one click.
+                Snap a photo of any room—messy or empty. Upload it directly from
+                your gallery or camera.
               </p>
             </div>
             <div class="step-card">
@@ -164,8 +174,8 @@
               </div>
               <h3>2. Choose Style</h3>
               <p>
-                Choose from a curated list of design styles, from modern
-                Minimalism to futuristic Cyberpunk.
+                Select from curated styles like Minimalism, Cyberpunk, or Zen to
+                match your vision.
               </p>
             </div>
             <div class="step-card">
@@ -180,14 +190,14 @@
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM18 13.5l.375 1.5L18 16.5l-.375-1.5-.375 1.5L16.5 15l1.125-.375L18 13.5z"
+                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z"
                   />
                 </svg>
               </div>
               <h3>3. Transform</h3>
               <p>
-                Our AI analyzes your room and generates a photorealistic,
-                stunning redesign in seconds.
+                AI instantly generates a photorealistic redesign. Compare, save,
+                or try a new style.
               </p>
             </div>
           </div>
@@ -195,54 +205,55 @@
       </section>
 
       <section id="app-showcase" class="animate-on-scroll">
-        <div class="container">
+        <div class="container" style="overflow: hidden">
           <h2>App <span class="gradient-text">Experience</span></h2>
           <p class="section-desc">
-            Fast, simple, and easy to use. Now available on the
-            <a href="https://aihomedecorator.com/" target="_blank">
-              <span>Web</span></a
+            Fast, simple, and intuitive.
+            <br />
+            <span style="opacity: 0.7; font-size: 0.9rem"
+              >Coming soon to iOS & Android</span
             >
-            iOS & Android apps coming soon.
           </p>
 
-          <div class="showcase-grid">
-            <div class="showcase-item">
-              <img
-                src="./image/mobile-view/1.png"
-                alt="Splash"
-                loading="lazy"
-              />
-            </div>
-            <div class="showcase-item">
-              <img src="./image/mobile-view/2.png" alt="Home" loading="lazy" />
-            </div>
-            <div class="showcase-item">
-              <img
-                src="./image/mobile-view/3.png"
-                alt="Select Style"
-                loading="lazy"
-              />
-            </div>
-            <div class="showcase-item">
-              <img
-                src="./image/mobile-view/4.png"
-                alt="Results"
-                loading="lazy"
-              />
-            </div>
-            <div class="showcase-item">
-              <img
-                src="./image/mobile-view/5.png"
-                alt="Compare"
-                loading="lazy"
-              />
-            </div>
-            <div class="showcase-item">
-              <img
-                src="./image/mobile-view/6.png"
-                alt="Settings"
-                loading="lazy"
-              />
+          <div class="marquee-wrapper">
+            <div class="marquee-track">
+              <div class="showcase-item">
+                <img src="./image/mobile-view/1.png" alt="Splash" />
+              </div>
+              <div class="showcase-item">
+                <img src="./image/mobile-view/2.png" alt="Home" />
+              </div>
+              <div class="showcase-item">
+                <img src="./image/mobile-view/3.png" alt="Select" />
+              </div>
+              <div class="showcase-item">
+                <img src="./image/mobile-view/4.png" alt="Results" />
+              </div>
+              <div class="showcase-item">
+                <img src="./image/mobile-view/5.png" alt="Compare" />
+              </div>
+              <div class="showcase-item">
+                <img src="./image/mobile-view/6.png" alt="Settings" />
+              </div>
+
+              <div class="showcase-item">
+                <img src="./image/mobile-view/1.png" alt="Splash" />
+              </div>
+              <div class="showcase-item">
+                <img src="./image/mobile-view/2.png" alt="Home" />
+              </div>
+              <div class="showcase-item">
+                <img src="./image/mobile-view/3.png" alt="Select" />
+              </div>
+              <div class="showcase-item">
+                <img src="./image/mobile-view/4.png" alt="Results" />
+              </div>
+              <div class="showcase-item">
+                <img src="./image/mobile-view/5.png" alt="Compare" />
+              </div>
+              <div class="showcase-item">
+                <img src="./image/mobile-view/6.png" alt="Settings" />
+              </div>
             </div>
           </div>
         </div>
@@ -251,36 +262,50 @@
       <section id="demos" class="animate-on-scroll">
         <div class="container">
           <h2>See it in <span class="gradient-text">Action</span></h2>
-          <div class="demo-grid">
-            <div class="demo-video-wrapper">
-              <video
-                controls
-                loop
-                muted
-                playsinline
-                poster="./image/tumb_01.png"
-              >
-                <source
-                  src="./video/Ai- Homedecorator 1.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
+
+          <div class="demos-layout">
+            <div class="video-col-main">
+              <div class="demo-video-wrapper">
+                <video
+                  controls
+                  loop
+                  muted
+                  playsinline
+                  poster="./image/tumb_01.png"
+                >
+                  <source
+                    src="./video/Ai- Homedecorator 1.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div class="demo-video-wrapper">
+                <video
+                  controls
+                  loop
+                  muted
+                  playsinline
+                  poster="./image/tumb-2.png"
+                >
+                  <source
+                    src="./video/Ai- Homedecorator 2.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
             </div>
-            <div class="demo-video-wrapper">
-              <video
-                controls
-                loop
-                muted
-                playsinline
-                poster="./image/tumb-2.png"
-              >
-                <source
-                  src="./video/Ai- Homedecorator 2.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
+
+            <div class="video-col-side">
+              <div class="phone-frame">
+                <div class="notch"></div>
+                <video controls loop muted playsinline class="phone-video">
+                  <source
+                    src="./video/Ai- Homedecorator 3.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <p class="phone-caption">Mobile Experience</p>
             </div>
           </div>
         </div>
@@ -291,40 +316,46 @@
           <h2>Curated <span class="gradient-text">Styles</span></h2>
           <div class="style-grid">
             <div class="style-card">
-              <img src="./image/all-styles/Japandi.png" alt="Japandi Style" />
-              <div class="style-name">Japandi</div>
+              <img src="./image/all-styles/Japandi.png" alt="Japandi" />
+              <div class="style-overlay">
+                <span class="style-name">Japandi</span>
+              </div>
             </div>
             <div class="style-card">
-              <img src="./image/all-styles/boho.png" alt="Boho Style" />
-              <div class="style-name">Boho</div>
+              <img src="./image/all-styles/boho.png" alt="Boho" />
+              <div class="style-overlay">
+                <span class="style-name">Boho</span>
+              </div>
             </div>
             <div class="style-card">
               <img
                 src="./image/all-styles/Scandinavian.png"
-                alt="Scandinavian Style"
+                alt="Scandinavian"
               />
-              <div class="style-name">Scandinavian</div>
+              <div class="style-overlay">
+                <span class="style-name">Scandinavian</span>
+              </div>
             </div>
             <div class="style-card">
               <img
                 src="./image/all-styles/modern farmhouse.png"
-                alt="Scandinavian Style"
+                alt="Modern Farmhouse"
               />
-              <div class="style-name">Modern farmhouse</div>
+              <div class="style-overlay">
+                <span class="style-name">Modern Farmhouse</span>
+              </div>
             </div>
             <div class="style-card">
-              <img
-                src="./image/all-styles/chinese Zen.png"
-                alt="Scandinavian Style"
-              />
-              <div class="style-name">Chinese Zen</div>
+              <img src="./image/all-styles/chinese Zen.png" alt="Chinese Zen" />
+              <div class="style-overlay">
+                <span class="style-name">Chinese Zen</span>
+              </div>
             </div>
             <div class="style-card">
-              <img
-                src="./image/all-styles/Industrial.png"
-                alt="Scandinavian Style"
-              />
-              <div class="style-name">Industrial</div>
+              <img src="./image/all-styles/Traditional.png" alt="Industrial" />
+              <div class="style-overlay">
+                <span class="style-name">Traditional</span>
+              </div>
             </div>
           </div>
         </div>
@@ -358,7 +389,6 @@
     <footer class="main-footer">
       <div class="container">
         <div class="footer-logo">
-          <img src="./icons/icon-512x512_bg.png" alt="Logo" width="32" />
           <span>AI Home Decorator</span>
         </div>
         <div class="footer-links">
@@ -378,89 +408,69 @@
         const particleContainer = document.getElementById(
           "particles-container"
         );
-        const particleCount = 50; // Number of particles
-        const colors = ["#8b5cf6", "#ec4899", "#06b6d4", "#ffffff"];
+        const particleCount = 40;
+        const colors = ["#8b5cf6", "#ec4899", "#06b6d4"];
 
         for (let i = 0; i < particleCount; i++) {
           const particle = document.createElement("div");
           particle.classList.add("particle");
           particleContainer.appendChild(particle);
 
-          // Random properties
-          const size = Math.random() * 3 + 1; // 1px to 4px
+          const size = Math.random() * 4 + 1;
           const color = colors[Math.floor(Math.random() * colors.length)];
 
-          // Set initial state
           gsap.set(particle, {
             x: Math.random() * window.innerWidth,
             y: Math.random() * window.innerHeight,
             width: size,
             height: size,
             backgroundColor: color,
-            opacity: Math.random() * 0.6 + 0.2,
-            boxShadow: `0 0 ${Math.random() * 10 + 4}px ${color}`, // Glow effect
+            opacity: Math.random() * 0.5 + 0.1,
+            boxShadow: `0 0 ${Math.random() * 8 + 2}px ${color}`,
           });
 
-          // Animate Upwards
           animateParticle(particle);
         }
 
         function animateParticle(el) {
-          // Vertical movement (Up)
-          const duration = Math.random() * 15 + 10; // Slow smooth speed
-
           gsap.to(el, {
-            y: -100, // Move off screen top
-            duration: duration,
+            y: -50,
+            duration: Math.random() * 10 + 10,
             ease: "none",
             repeat: -1,
-            delay: -Math.random() * duration, // Start mid-animation
             onRepeat: () => {
-              // Reset to bottom when loop restarts
               gsap.set(el, {
-                y: window.innerHeight + 50,
+                y: window.innerHeight + 10,
                 x: Math.random() * window.innerWidth,
               });
             },
           });
-
-          // Horizontal wobble (Side to Side)
           gsap.to(el, {
-            x: "+=40",
-            duration: Math.random() * 4 + 3,
-            yoyo: true,
-            repeat: -1,
-            ease: "sine.inOut",
-          });
-
-          // Fading Pulse
-          gsap.to(el, {
-            opacity: Math.random() * 0.8 + 0.1,
-            duration: Math.random() * 2 + 1,
+            x: "+=50",
+            duration: Math.random() * 5 + 3,
             yoyo: true,
             repeat: -1,
             ease: "sine.inOut",
           });
         }
 
-        /* --- 2. Standard Logic (Sliders, Menu, etc) --- */
+        /* --- 2. Before/After Slider Logic --- */
+        const sliderInput = document.querySelector(".slider-input");
+        const sliderWrapper = document.querySelector(".slider-wrapper");
 
-        // Slider
-        const slider = document.querySelector(".slider-input");
-        if (slider) {
-          const sliderWrapper = slider.closest(".slider-wrapper");
+        if (sliderInput && sliderWrapper) {
           const imageAfter = sliderWrapper.querySelector(".slider-image-after");
           const handle = sliderWrapper.querySelector(".slider-handle");
 
-          slider.addEventListener("input", (e) => {
-            const value = e.target.value;
-            if (imageAfter)
-              imageAfter.style.clipPath = `polygon(${value}% 0, 100% 0, 100% 100%, ${value}% 100%)`;
-            if (handle) handle.style.left = `${value}%`;
+          sliderInput.addEventListener("input", (e) => {
+            const val = e.target.value;
+            // Clip path reveals the AFTER image (on top)
+            imageAfter.style.clipPath = `polygon(${val}% 0, 100% 0, 100% 100%, ${val}% 100%)`;
+            handle.style.left = `${val}%`;
           });
         }
 
-        // Scroll Animations
+        /* --- 3. Intersection Observer --- */
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
@@ -476,16 +486,13 @@
           .querySelectorAll(".animate-on-scroll")
           .forEach((sec) => observer.observe(sec));
 
-        // Mobile Menu
+        /* --- 4. Mobile Menu --- */
         const menuToggle = document.querySelector(".menu-toggle");
         const mainNav = document.querySelector(".main-nav");
         if (menuToggle && mainNav) {
           menuToggle.addEventListener("click", () => {
             menuToggle.classList.toggle("active");
             mainNav.classList.toggle("active");
-            const isExpanded =
-              menuToggle.getAttribute("aria-expanded") === "true";
-            menuToggle.setAttribute("aria-expanded", !isExpanded);
           });
         }
       });
