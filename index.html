@@ -22,6 +22,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      .demo-video-wrapper iframe,
+      .phone-frame iframe {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
     <div class="bg-glow"></div>
@@ -266,44 +274,41 @@
           <div class="demos-layout">
             <div class="video-col-main">
               <div class="demo-video-wrapper">
-                <video
-                  controls
-                  loop
-                  muted
-                  playsinline
-                  poster="./image/tumb_01.png"
-                >
-                  <source
-                    src="./video/Ai- Homedecorator 1.mp4"
-                    type="video/mp4"
-                  />
-                </video>
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/watch?v=mOgAdQcr0_o"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
               </div>
+
               <div class="demo-video-wrapper">
-                <video
-                  controls
-                  loop
-                  muted
-                  playsinline
-                  poster="./image/tumb-2.png"
-                >
-                  <source
-                    src="./video/Ai- Homedecorator 2.mp4"
-                    type="video/mp4"
-                  />
-                </video>
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/watch?v=VgFOX6MzIc0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
               </div>
             </div>
 
             <div class="video-col-side">
               <div class="phone-frame">
                 <div class="notch"></div>
-                <video controls loop muted playsinline class="phone-video">
-                  <source
-                    src="./video/Ai- Homedecorator 3.mp4"
-                    type="video/mp4"
-                  />
-                </video>
+                <iframe
+                  class="phone-video"
+                  src="https://www.youtube.com/shorts/sNG-6OpLgBA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
               </div>
               <p class="phone-caption">Mobile Experience</p>
             </div>
