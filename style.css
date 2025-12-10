@@ -403,11 +403,17 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: black;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  /* Added aspect-ratio to support iframes */
+  aspect-ratio: 16 / 9;
 }
-.demo-video-wrapper video {
+/* Selector updated to include iframe */
+.demo-video-wrapper video,
+.demo-video-wrapper iframe {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
+  border: none;
 }
 
 /* Right side: Phone Frame for Mobile Video */
@@ -427,6 +433,8 @@ h3 {
   background: #000;
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  /* Added aspect-ratio to define height for iframe */
+  aspect-ratio: 9 / 19;
 }
 .phone-frame .notch {
   position: absolute;
@@ -442,9 +450,11 @@ h3 {
 }
 .phone-video {
   width: 100%;
-  height: auto;
+  height: 100%; /* Changed from auto to 100% to fill aspect-ratio container */
   display: block;
   border-radius: 32px; /* Matches inner radius */
+  object-fit: cover;
+  border: none;
 }
 .phone-caption {
   margin-top: 16px;
