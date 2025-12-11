@@ -549,6 +549,38 @@ h3 {
   font-size: 0.85rem;
 }
 
+/* Add inside the --- Footer --- section */
+
+.footer-socials {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-socials a {
+  color: var(--color-text);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.footer-socials a:hover {
+  color: white;
+  background: #ff0000; /* YouTube Brand Red */
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+.footer-socials svg {
+  width: 24px;
+  height: 24px;
+}
+
 /* --- Animations --- */
 .animate-on-scroll {
   opacity: 0;
