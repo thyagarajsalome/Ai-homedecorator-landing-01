@@ -382,12 +382,162 @@ h3 {
   display: block;
 }
 
-/* --- Demos Layout (MIXED GRID) --- */
+/* --- Demos Layout (FIXED RESPONSIVENESS) --- */
 .demos-layout {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 40px; /* Increased gap for better spacing on tablet */
   justify-content: center;
+  align-items: flex-start; /* Prevents stretching */
+}
+
+/* Left side: Main Landscape Videos */
+.video-col-main {
+  flex: 2;
+  min-width: 320px; /* Prevent it from getting too small */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.demo-video-wrapper {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: black;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  aspect-ratio: 16 / 9; /* Maintains perfect YouTube ratio */
+}
+
+.demo-video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Right side: Phone Frame */
+.video-col-side {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.phone-frame {
+  position: relative;
+  width: 100%; /* FLUID WIDTH */
+  max-width: 280px; /* Maximum size */
+  aspect-ratio: 9 / 19; /* Maintains Phone Ratio */
+  border-radius: 40px;
+  border: 8px solid #334155;
+  background: #000;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+.phone-frame .notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%; /* Fluid notch width */
+  height: 24px;
+  background: #334155;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  z-index: 10;
+}
+
+.phone-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* --- Features / Styles Grid Fix --- */
+.style-grid {
+  display: grid;
+  /* Changed minmax to 260px to fit 2 cols on smaller tablets */
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* --- UPDATED RESPONSIVE MEDIA QUERIES --- */
+
+/* Tablet & Smaller Laptops (Below 1024px) */
+@media (max-width: 1024px) {
+  .demos-layout {
+    flex-direction: column;
+    align-items: center; /* Centers everything */
+  }
+
+  .video-col-main {
+    width: 100%; /* Take full width */
+    flex: none;
+  }
+
+  .video-col-side {
+    width: 100%;
+    flex: none;
+    margin-top: 32px;
+    flex-direction: row; /* Put text beside phone on tablet if desired, or keep col */
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .phone-caption {
+    margin-top: 0; /* Reset margin if switching layout */
+  }
+}
+
+/* Mobile (Below 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Reset side column to vertical for mobile */
+  .video-col-side {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .phone-caption {
+    margin-top: 16px;
+  }
+
+  .style-grid {
+    /* On very small screens, force 1 column or smaller items */
+    grid-template-columns: 1fr;
+  }
+
+  /* Adjust Mobile Menu positioning if needed */
+  .menu-toggle {
+    display: block;
+    z-index: 1001;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #1e293b;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
 }
 /* Left side: Stacked landscape videos */
 .video-col-main {
